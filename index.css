@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #ffdf6a;
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: var(--primary-color);
+    font-size: xx-large;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 70%;
+    overflow: auto;
+}
+
+#txt-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+#minion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minion img{
+    height: 400px;
+    max-height: 50vh
+}
+
+textarea, #output {
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    min-height: 8.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #2c2c2c;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#btn-translate {
+    border: navajowhite;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+#btn-translate:hover{
+    background-color: #0d529a;
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 0.3rem;
+}
+
+footer{
+    margin-top: auto;
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
